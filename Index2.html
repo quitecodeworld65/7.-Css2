@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>another css page </title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+/*/media queries max and min width*/
+@media only screen and (max-width:360px){
+  body{ background-color:red;
+  color:white;
+}}
+/*/media queries max and min width*/
+,
+@media only screen and (min-width:370px){
+  body{ background-color: yellow;
+}}
+@media only screen and (orientation:portrait){
+body{background-color:pink;
+}
+  
+}
+/*This property is same as max-width*/
+
+@media only screen and (width<=600px){
+body{background-color:black;
+}
+  
+}
+
+  /* nth child property*/
+#nth :nth-child(3){
+  background-color:green;
+}
+/* nth even*/
+#nth-even :nth-child(even){
+  background-color:green;
+
+  
+}
+/* nth-odd*/
+
+#nth-odd :nth-child(odd) {
+  background-color: green;
+}
+/* custom nth */
+#custom-nth :nth-child(8n+2){
+  background-color:blue;
+}
+#nth-last-child :nth-last-child(3){
+  color:red;
+}
+/* an optional */
+
+input:optional {
+  background-color: yellow;
+}
+
+/* css scroll bar style*/
+::-webkit-scrollbar{
+width:10px;
+}
+
+:-webkit-scrollbar-track{
+background-color: rgba(255,255, 255}
+:-webkit-scrollbar-thumb {
+background-color:red;
+border-radius: 10px;
+}
+</style>
+<body>
+<!-- this page use for in the first css page there are many div present so they cannot define each value*/-->
+<h5> after select class there is nessary to less space between class and :nth-child in css.</h5>
+<h6>
+  #nth :nth-child(3){
+  background-color:green;
+}
+</h6>
+<div id="nth">
+  <p>this is child 1st</p>
+    <p>this is child 2nd</p>
+      <p>this is child 3rd</p>
+        <p>this is child 4th</p>
+
+</div>
+<br>
+<hr>
+<br>
+<!--##########################-->
+<h5>This is even nth child</h5>
+<br>
+<h6>
+  #nth-even :nth-child(even){
+  background-color:green;
+</h6>
+<div id="nth-even">
+  <p>this is child 1st</p>
+    <p>this is child 2nd</p>
+      <p>this is child 3rd</p>
+        <p>this is child 4th</p>
+</div>
+<br>
+<hr>
+<br>
+<!--###########################-->
+<h5>This is odd nth child</h5>
+<br>
+<h6>
+  #nth-odd :nth-child(odd) {
+  background-color: green;
+}
+</h6>
+<div id="nth-odd">
+  <p>this is child 1st</p>
+  <p>this is child 2nd</p>
+  <p>this is child 3rd</p>
+  <p>this is child 4th</p>
+</div>
+<br>
+<hr>
+<br>
+<!--###########################-->
+<h5>custom nth child inportant</h5>
+<br>
+<h6>
+#custom-nth :nth-child(8n+2){
+  background-color:blue;
+}  
+</h6>
+<div id="custom-nth">
+  <p>this is child 1st</p>
+    <p>this is child 2nd</p>
+      <p>this is child 3rd</p>
+        <p>this is child 4th</p>
+          <p>this is child 5th</p>
+          <p>this is child 6th</p>
+         <p>this is child 7th</p>
+        <p>this is child 8th</p>
+       <p>this is child 9th</p>
+     <p>this is child 10th</p>
+    <p>this is child 11th</p>
+  <p>this is child 12th</p>
+</div>
+<br>
+<hr>
+<br>
+<!--###########################-->
+<h5>nth child property start from last line as the (3).we can also use  in the nth last child property as even and odd numbers and custom nth like nth -child from last . </h5>
+<br>
+<h6>
+  #nth-last-child :nth-last-child(3){
+  color:red;
+}
+</h6>
+<div id="nth-last-child">
+  <p>this is child 1st</p>
+    <p>this is child 2nd</p>
+      <p>this is child 3rd</p>
+        <p>this is child 4th</p>
+          <p>this is child 5th</p>
+          <p>this is child 6th</p>
+         <p>this is child 7th</p>
+        <p>this is child 8th</p>
+</div>
+<br>
+<hr>
+<br>
+<!--###########################-->
+<h1>Demo of the :optional selector</h1>
+
+<p>An optional input element:<br><input></p>
+<h6>
+input:optional {
+  background-color: yellow;
+}  
+</h6>
+<p>A required input element:<br><input required></p>
+<p>The :optional selector selects form elements with no "required" attribute.</p>
+<br>
+<hr>
+<br>
+<!--###########################-->
+<h6> These are some icon that have not any css.</h6>
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+</body>
+
+</html>
